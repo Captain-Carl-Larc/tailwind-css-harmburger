@@ -9,24 +9,24 @@
   </title>
 </head>
 <body class="bg-blue-200">
-    <header class="flex justify-between items-center bg-gray-700 min-h-16 md:px-4">
+    <header class="flex justify-between items-center bg-gray-700 h-16 md:min-h-16 md:px-4 relative">
         <div class="logo-cont pl-4">
             <p class="font-bold text-2xl cursor-pointer">
                 LOGO
             </p>
         </div>
-        <nav class="w-48 md:w-auto md:pl-0">
-            <div class="menu-bar flex justify-end">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-12 cursor-pointer md:hidden mr-8" onclick="showMenu()">
+        <nav class="w-48 md:w-auto md:pl-0 " id="nav-el">
+            <div class="flex justify-end" id="toggler-menu-cont relative">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-12 cursor-pointer md:hidden" onclick="showMenu()"  id="open-menu">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-12 cursor-pointer hidden" onclick="hideMenu()">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-12 cursor-pointer hidden" onclick="hideMenu()" id="close-menu">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"  />
                 </svg>
                   
                   
             </div>
-            <ul class="hidden md:flex flex-col md:items-center md:justify-center gap-x-4 md:flex-row md:gap-x-8 md:pr-4">
+            <ul class="hidden md:flex flex-col md:items-center md:justify-center gap-x-4 md:flex-row md:gap-x-8 md:pr-4" id="nav-ul">
                 <li>
                     <a href="#" class="no-underline text-blue-600 text-lg font-bold  hover:border-b hover:border-b-blue-300 hover:border-b-2">Home</a>
                 </li>
